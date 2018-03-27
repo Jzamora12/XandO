@@ -45,14 +45,15 @@ int main()
     else //1. When neither of the (above) if nor else if statements are true, then...
     {
       board[row][column] = turn; //1-A.  Assign the board location of row and column to the value of turn
-    }
-    if ( turn == X ) //1-B.  When turn has the value 'X', then...
-    {
-      turn = O; //1-B-1.  turn should be assigned the value 'O'
-    }
-    else  //1-C.  In any other case, then...
-    {
-      turn = X; //1-C-1.  turn should be assigned the value 'X'
+ 
+      if ( turn == X ) //1-B.  When turn has the value 'X', then...
+      {
+        turn = O; //1-B-1.  turn should be assigned the value 'O'
+      }
+      else  //1-C.  In any other case, then...
+      {
+        turn = X; //1-C-1.  turn should be assigned the value 'X'
+      }  
     }
 
     cout<<"\nBOARD\n-----\n";
