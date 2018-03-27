@@ -62,10 +62,9 @@ int main()
     {
       for ( int c=0; c < COLUMNS; c++) //1-A. Traverse through each column in row r, calling the current column c
       {
-        cout<< board[r][c];
-        cout<< " ";
+        cout<< board[r][c]<<" ";
       }
-      cout<<endl;
+      cout<< endl;
     }
     //1-A-1.  Display the value of the board at location of r and c
     //1-A-2. Display a space
